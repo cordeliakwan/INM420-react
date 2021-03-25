@@ -1,0 +1,76 @@
+/* Menu styles */
+.Menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+/* Menu Category styles*/
+h1 {
+    text-transform: capitalize;
+}
+.Pizza,
+.Burger,
+.Pasta {
+    width: 100%;
+}
+.banner-div {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 70px 0;
+}
+.menu-category-div {
+    padding: 15px;
+    background-color: white;
+    width: 300px;
+}
+.Pizza .banner-div {
+    background-image: url(../images/pizza-menu.jpg);
+}
+.Burger .banner-div {
+    background-image: url(../images/burger-menu.jpg);
+    background-position: 50% 50%;
+}
+.Pasta .banner-div {
+    background-image: url(../images/pasta-menu.jpg);
+    background-position: 50% 15%;
+}
+.menu-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+.menu-row {
+    display: flex;
+    flex-direction: column;
+}
+.menu-item {
+    margin: 30px;
+}
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+    .menu-div {
+        margin: 0px 40px;
+    }
+    .menu-row {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .menu-item {
+        width: 33%;
+    }
+
+
+}

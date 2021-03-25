@@ -1,0 +1,59 @@
+.About {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-h1 {
+    color: black;
+    text-align: center;
+}
+.about-text-div {
+    padding: 40px;
+}
+.about-background-wrapper {
+    overflow: hidden; 
+    /* background-size: cover;
+    background-repeat: no-repeat;    */
+    margin: auto;
+    position: relative;
+    height: 50vh;
+    
+}
+.about-background {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) ), url(../images/making-pizza.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: 50% 80%;
+    opacity: 0.95;
+    margin: 30px;
+
+    display: flex;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+    .About {
+        flex-direction: row;
+        align-content: center;
+        height: 90vh;
+    }
+    .about-text-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+    }
+    .about-h1 {
+        text-align: left
+    }
+    .about-image {
+        width: 50%;
+    }
+    .about-background-wrapper {
+        height: 100%;
+    }
+    .about-background {
+        height: 100%;
+    }
+}

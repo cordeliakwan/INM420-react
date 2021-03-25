@@ -1,0 +1,59 @@
+.Contact {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-h1 {
+    color: black;
+    text-align: center;
+}
+.contact-text-div {
+    padding: 40px;
+}
+.contact-background-wrapper {
+    overflow: hidden; 
+    /* background-size: cover;
+    background-repeat: no-repeat;    */
+    margin: auto;
+    position: relative;
+    height: 50vh;
+    
+}
+.contact-background {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1) ), url(../images/contact.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: 50% 80%;
+    opacity: 0.95;
+    margin: 30px;
+
+    display: flex;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+    .Contact{
+        flex-direction: row-reverse;
+        align-content: center;
+        height: 90vh;
+    }
+    .contact-text-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+    }
+    .contact-h1 {
+        text-align: left
+    }
+    .contact-image {
+        width: 50%;
+    }
+    .contact-background-wrapper {
+        height: 100%;
+    }
+    .contact-background {
+        height: 100%;
+    }
+}
